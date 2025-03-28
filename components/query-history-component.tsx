@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Clock, Trash2 } from "lucide-react"
 import { AppDispatch } from "@/lib/store/store"
+import { RootState } from "@/lib/store/store"
 
 interface HistoryItem {
   query: string
@@ -15,9 +16,8 @@ interface HistoryItem {
 
 export function QueryHistory({ onSelectQuery }: { onSelectQuery?: () => void }) {
   const dispatch = useDispatch<AppDispatch>()
-  const { history, loading } = useSelector((state: any) => state.query)
+  const { history, loading } = useSelector((state: RootState) => state.query)
 
-  // Update the handleRerunQuery function to manually dispatch the setQueryResult action after rerunQuery
   const handleRerunQuery = (query: string) => {
     dispatch(rerunQuery(query))
 
@@ -79,5 +79,4 @@ export function QueryHistory({ onSelectQuery }: { onSelectQuery?: () => void }) 
       </ScrollArea>
     </div>
   )
-}
-
+} 
