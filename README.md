@@ -3,6 +3,9 @@
 ## **Overview**
 **QueryDashboard** is a **React SPA** built to communicate with the **Gen AI Analytics tool**. The dashboard allows users to enter **natural language questions** and obtain **simulated answers with visualizations**, showcasing the ability of the tool to **democratize business unit data insights**.
 
+## **Live Demo**
+🔗 **[Click here to view the live project](https://dataquery.aafreen.live/)**
+
 ## **Features**
 - **Natural Language Query Input:** Users can enter business questions in plain English.
 - **Query Processing Simulation:** The application simulates query processing and provides predetermined responses.
@@ -46,5 +49,3 @@ The app employs **Redux** for managing global state. Actions and reducers are cr
 ## **Dark Mode Implementation**
 A **dark mode feature** is implemented using a **state variable (`darkMode`)**. The UI components dynamically change their styles according to this state, allowing for a **smooth transition between light and dark themes**.
 
-## **Live Demo**
-🔗 **[Click here to view the live project](https://data-query-dashboard-kappa.vercel.app/)**
